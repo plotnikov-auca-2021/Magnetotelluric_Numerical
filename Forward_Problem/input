@@ -1,0 +1,11 @@
+This is temporary file which contains input data for different forward MT problem.
+Later problem selection will be implemented inside the program.
+
+First Problem:
+sigma = np.array([0.1, 0.001])  # Conductivities (S/m)
+h = np.array([100, inf])  # Layer thicknesses (m)
+
+Second Problem:
+
+sigma = np.array([0.0005, 0.05])  # Conductivities (S/m)
+h = np.array([500, inf])  # Layer thicknesses (m)

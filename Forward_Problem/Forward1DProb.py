@@ -76,8 +76,8 @@ def plot_results(w, Rho_apparent, Phase):
 # Example usage
 mu0 = 4 * np.pi * 1e-7
 w = np.array(progression)  # Frequencies (Hz)
-sigma = np.array([0.1, 0.001])  # Conductivities (S/m)
-h = np.array([100, inf])  # Layer thicknesses (m)
+sigma = np.array([0.0005, 0.05])  # Conductivities (S/m)
+h = np.array([500, inf])  # Layer thicknesses (m)
 
 Z, Rho_apparent, Phase = Fwd1DProblem(mu0, w, sigma, h)
 
