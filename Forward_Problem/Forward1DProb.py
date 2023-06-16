@@ -22,7 +22,7 @@ def geometric_progression(a, r, n):
     return progression
 
 
-a = 0.01  # First term
+a = 0.00001  # First term
 r = 2  # Common ratio
 n = 27  # Number of terms
 
@@ -76,8 +76,9 @@ def plot_results(w, Rho_apparent, Phase):
 # Example usage
 mu0 = 4 * np.pi * 1e-7
 w = np.array(progression)  # Frequencies (Hz)
-sigma = np.array([0.0005, 0.05])  # Conductivities (S/m)
-h = np.array([500, inf])  # Layer thicknesses (m)
+sigma = np.array([1/50, 1/500, 1/600, 1/200])  # Conductivities (S/m)
+h = np.array([1000, 2000, 500, inf])  # Layer thicknesses (m)
+
 
 Z, Rho_apparent, Phase = Fwd1DProblem(mu0, w, sigma, h)
 

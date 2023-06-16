@@ -1,11 +1,29 @@
 This is temporary file which contains input data for different forward MT problem.
 Later problem selection will be implemented inside the program.
 
+From Orozkul set
 First Problem:
 sigma = np.array([0.1, 0.001])  # Conductivities (S/m)
 h = np.array([100, inf])  # Layer thicknesses (m)
 
 Second Problem:
-
 sigma = np.array([0.0005, 0.05])  # Conductivities (S/m)
 h = np.array([500, inf])  # Layer thicknesses (m)
+
+From conference
+frequency should be lower
+a = 0.00001
+
+First Problem:
+sigma = np.array([1/100, 1/1000])  # Conductivities (S/m)
+h = np.array([500, inf])  # Layer thicknesses (m)
+
+Second Problem:
+
+sigma = np.array([1/100, 1/1000, 1/10])  # Conductivities (S/m)
+h = np.array([2000, 20000, inf])  # Layer thicknesses (m)
+
+Third Problem:
+sigma = np.array([1/50, 1/500, 1/600, 1/200])  # Conductivities (S/m)
+h = np.array([1000, 2000, 500, inf])  # Layer thicknesses (m)
+
